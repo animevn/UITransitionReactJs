@@ -12,32 +12,31 @@
 .home-appear-done {
 }
 
-.home-enter {
-    transform: translateX(-50px) scale(0.9);
-    opacity: 0;
-}
+/*.home-enter {*/
+/*    transform: translateX(-50px) scale(0.9);*/
+/*    opacity: 0;*/
+/*}*/
 
-.home-enter-active {
-    opacity: 1;
-    transform: translateX(0) scale(1);
-    transition: all 300ms linear;
-}
+/*.home-enter-active {*/
+/*    opacity: 1;*/
+/*    transform: translateX(0) scale(1);*/
+/*    transition: all 300ms linear;*/
+/*}*/
 
-.home-enter-done {
+/*.home-enter-done {*/
 
-}
+/*}*/
 
-.home-exit {
-    opacity: 1.0;
-    transform: translateX(0);
-}
+/*.home-exit {*/
+/*    opacity: 1;*/
+/*    transform: translateX(0) scale(1);*/
 
-.home-exit-active {
-    opacity: 0;
-    transform: translateX(-50) scale(0.5);
-    transition: all 300ms linear;
-}
+/*}*/
 
-.home-exit-done {
+/*.home-exit-active {*/
+/*    opacity: 0;*/
+/*    transition: all 300ms linear;*/
+/*}*/
 
-}
+/*.home-exit-done {*/
+/*}*/

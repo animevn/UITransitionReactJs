@@ -1,16 +1,14 @@
-import React, {useState} from "react";
+import React from "react";
 import {useHistory} from "react-router-dom";
 import {CSSTransition} from "react-transition-group";
 import "./Home.css"
 
 function Home() {
   const history = useHistory();
-  const [show, setShow] = useState(true);
 
   function onClick(event) {
     event.preventDefault();
-    setShow(false);
-    history.push("/come");
+    history.push("/come")
   }
 
   const content = (
@@ -39,10 +37,10 @@ function Home() {
   return (
     <div className="container mt-3 col-xl-5 col-lg-6 col-md-8 col-sm-11 col-11">
       <CSSTransition
-        in={show}
+        in={true}
         classNames="home"
-        appear
         timeout={300}
+        appear
       >
         {content}
       </CSSTransition>
