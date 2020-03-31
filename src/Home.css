@@ -1,0 +1,45 @@
+.home-appear {
+    transform: translateX(-50px);
+    opacity: 0;
+}
+
+.home-appear-active {
+    opacity: 1;
+    transform: translateX(0);;
+    transition: all 300ms linear;
+}
+
+.home-appear-done {
+    opacity: 1;
+    transform: translateX(0);;
+}
+
+.home-enter {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+.home-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 300ms, transform 300ms;
+}
+
+.home-enter-done {
+
+}
+
+.home-exit {
+    opacity: 1.0;
+    transform: translateX(0);
+}
+
+.home-exit-active {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 3000ms, transform 3000ms;
+}
+
+.home-exit-done {
+
+}

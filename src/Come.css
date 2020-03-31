@@ -1,0 +1,44 @@
+.come-appear {
+    transform: translateX(50px);
+    opacity: 0;
+}
+
+.come-appear-active {
+    opacity: 1;
+    transform: translateX(0);;
+    transition: all 300ms linear;
+}
+
+.come-appear-done {
+
+}
+
+.come-enter {
+    opacity: 0;
+    transform: translateX(30px);
+}
+
+.come-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 10s linear 10s;
+}
+
+.come-enter-done {
+
+}
+
+.come-exit {
+    opacity: 1.0;
+    transform: translateX(0);
+}
+
+.come-exit-active {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 300ms linear;
+}
+
+.come-exit-done {
+
+}
