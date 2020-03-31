@@ -44,8 +44,6 @@ function Come() {
         classNames="come"
         timeout={300}
         appear
-        exit
-        unmountOnExit
       >
         {content}
       </CSSTransition>

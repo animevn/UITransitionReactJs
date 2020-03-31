@@ -1,11 +1,11 @@
 .come-appear {
-    transform: translateX(50px);
+    transform: translateX(50px) scale(0.9);
     opacity: 0;
 }
 
 .come-appear-active {
     opacity: 1;
-    transform: translateX(0);;
+    transform: translateX(0) scale(1);
     transition: all 300ms linear;
 }
 
@@ -21,7 +21,7 @@
 .come-enter-active {
     opacity: 1;
     transform: translateX(0);
-    transition: all 10s linear 10s;
+    transition: all 1s linear;
 }
 
 .come-enter-done {
@@ -35,7 +35,7 @@
 
 .come-exit-active {
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(150px);
     transition: all 300ms linear;
 }
 
