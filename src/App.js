@@ -2,28 +2,25 @@ import React from "react";
 import Header from "./Header"
 import Footer from "./Footer";
 import Home from "./Home";
-import "bootstrap/dist/css/bootstrap.min.css"
-import "./App.css"
+import Grid from "@material-ui/core/Grid";
+import Box from "@material-ui/core/Box";
 import {BrowserRouter, Route} from "react-router-dom";
 import Come from "./Come";
 
 function App() {
   return (
-    <div className="main">
-      <div className="container-fluid px-0">
+    <Box display="flex" flexDirection="column" justifyContent="space-between" minHeight="100vh">
+      <Grid>
         <Header/>
-
-        {/*app goes in here*/}
-        <div className="container pt-2">
-          <BrowserRouter>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/come" component={Come} />
-          </BrowserRouter>
-        </div>
-
-      </div>
+        {/*app body goes down here*/}
+        <BrowserRouter>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/come" component={Come} />
+        </BrowserRouter>
+        {/*app body goes up here hahaha */}
+      </Grid>
       <Footer/>
-    </div>
+    </Box>
   );
 }
 

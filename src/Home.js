@@ -1,7 +1,11 @@
 import React from "react";
 import {useHistory} from "react-router-dom";
 import {CSSTransition} from "react-transition-group";
+import Grid from "@material-ui/core/Grid";
+import Box from "@material-ui/core/Box";
 import "./Home.css"
+
+const width = {xs:10, sm:8, md:6, lg:5, xl:4};
 
 function Home() {
   const history = useHistory();
@@ -35,16 +39,18 @@ function Home() {
   );
 
   return (
-    <div className="container mt-3 col-xl-5 col-lg-6 col-md-8 col-sm-11 col-11">
-      <CSSTransition
-        in={true}
-        classNames="home"
-        timeout={300}
-        appear
-      >
-        {content}
-      </CSSTransition>
-    </div>
+    <Grid container direction="row" justify="center">
+      <Grid item {...width}>
+        <CSSTransition
+          in={true}
+          classNames="home"
+          timeout={300}
+          appear
+        >
+          {content}
+        </CSSTransition>
+      </Grid>
+    </Grid>
   )
 }
 
